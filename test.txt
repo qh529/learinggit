@@ -59,7 +59,8 @@ ssh-keygen -t rsa -C "qh529@163.com"
 
 git remote add origin git@github.com:michaelliao/learngit.git
 
-提交到远程仓库使用如下命令：git push -u origin master
+提交到远程仓库使用如下命令：
+git push -u origin master
 第一次提交时，为了与远程仓库的master分支建立关联，需要使用-u参数。以后直接使用git push orgin master
 
 ------------------------------------从远程仓库克隆------------------------------------------
