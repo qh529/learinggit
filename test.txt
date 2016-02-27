@@ -33,3 +33,9 @@ git 使用HEAD代表当前版本，HEAD^代表前一个版本，HEAD^^代表前�
 使用git commit 命令是将暂存区的修改提交到版本库
 
 可以使用git diff HEAD -- test.txt 比较 版本库和工作区之前的差别
+
+git checkout -- <file> 是撤销工作区的修改，恢复到最后一次git commit或者git add时的状态
+
+如果忘记输入git checkout 后面的-- ,就是切换分支的命令。
+
+
