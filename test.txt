@@ -21,7 +21,7 @@
 
 git 使用HEAD代表当前版本，HEAD^代表前一个版本，HEAD^^代表前前一个版本，也可以使用HEAD~2表示前前一个版本。
 
-使用git rest --hard HEAD^可以回退到前一个版本，或者回退到具体的某一个版本，使用:git reset --hard <versionID>
+使用git reset --hard HEAD^可以回退到前一个版本，或者回退到具体的某一个版本，使用:git reset --hard <versionID>
 
 可以使用git reflog查看历次操作，从结果中可以看到历次的版本号
 
@@ -71,4 +71,11 @@ git remote add origin git@github.com:michaelliao/learngit.git
  ssh-add /d/Git/ssh/id_rsa
  
  即可
- ————————————————————————————————————————————————————————————————————————————————————————————————
+ ———————————————————————————————————分支—————————————————————————————————————————————————————————————
+ 创建并切换分支命令：
+ git checkout -b dev
+ 该命令相当于下面的两条命令：
+ git branch dev
+ git checkout dev
+ 
+ 查看所有分支使用git branch命令
