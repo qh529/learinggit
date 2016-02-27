@@ -87,3 +87,8 @@ git remote add origin git@github.com:michaelliao/learngit.git
  合并后就可以删除dev分支，命令：git branch -d dev
  
  使用git log --graph 查看分支合并图
+ 
+ ------------------------------分支合并注意------------------------------
+ 使用fast forward模式进行合并，会没有合并记录，所以不要使用这一方式合并
+ 使用如下面参数合并就强制不适用fast-forward模式，命令：
+ git merge --no-ff -m "merge with no-ff" dev
