@@ -1,2 +1,17 @@
-git is a version control system.
-git is free software.
+2016-2-27 学习小结
+
+现在安装git windows的工具，地址：https://git-for-windows.github.io/
+ 
+
+初始化一个Git仓库，使用git init命令。可以直接进入该目录，然后右键选择 Git Bash Here，会出现bash窗口，然后敲git init命令，
+即将该目录去设置为仓库。
+
+添加文件到Git仓库，分两步：
+
+第一步，使用命令git add <file>，注意，可一次或反复多次使用，添加多个文件，多个文件之间空格；
+
+第二步，使用命令git commit，完成提交。
+
+查看仓库文件的目前的情况，使用 git status命令，可以看到仓库哪些文件修改了，提交了等等。如果某个文件被修改了，使用git diff <file> 命令查看该文件修改的情况。
+
+知道了对test.txt作了什么修改后，再把它提交到仓库就放心多了，提交修改和提交新文件是一样的两步，第一步是git add：
