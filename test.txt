@@ -92,3 +92,12 @@ git remote add origin git@github.com:michaelliao/learngit.git
  使用fast forward模式进行合并，会没有合并记录，所以不要使用这一方式合并
  使用如下面参数合并就强制不适用fast-forward模式，命令：
  git merge --no-ff -m "merge with no-ff" dev
+ 
+ -------------------------------暂存分支的改动退出工作区------------------------------------------
+工作区只能为一个分支所操作，所以如果当前分支的改动还未保存就要去其他分支修改内容，需要将当前分支的改动退出工作区并暂存起来，使用命令：
+git stash
+
+回复现场使用命令：
+git stash pop
+该命令恢复现场并删除stash区的内容删除
+
