@@ -79,3 +79,11 @@ git remote add origin git@github.com:michaelliao/learngit.git
  git checkout dev
  
  查看所有分支使用git branch命令
+ 
+ 切换分支命令 :git checkout dev,切换到dev分支
+ 
+ 将dev分支合并到master分支 git merge dev
+ 
+ 合并后就可以删除dev分支，命令：git branch -d dev
+ 
+ 使用git log --graph 查看分支合并图
